@@ -1,0 +1,39 @@
+$splash-width: 900px;
+
+.splash {
+  height: 100%;
+  background-attachment: fixed;
+  background-position: 50% 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.splash .content {
+  margin: 0 auto;
+  position: relative;
+  width: $splash-width;
+  max-width: 80%;
+  color: #fff;
+  top: 200px;
+}
+
+.splash h4{
+  width: 600px;
+  margin: 0 auto;
+  padding-top: 30px;
+  line-height: 1.6em;
+}
+
+
+.splash .email-form {
+  width: 450px;
+  margin-top: 40px;
+  margin: 40px auto 0 auto;
+
+  h3 {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+}
+
+
