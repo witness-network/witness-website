@@ -5,6 +5,10 @@
   height: 150px;
 }
 
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: transparent;
+}
+
 .navbar-nav {
   margin-top: 50px;
   font-size: 18px;
@@ -24,4 +28,35 @@
 .navbar-brand {
   height: auto;
   padding: 30px 30px;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: $white;
+  margin-top: 54px;
+}
+
+.navbar-default .navbar-toggle:hover {
+  // border-color: $green;
+  background-color: $green;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: $white;
+}
+
+
+.navbar-default .navbar-toggle .icon-bar::hover {
+  // background-color: $green;
+}
+
+
+
+.navbar .in, .navbar .collapsing {
+  background-color: $white;
+  transition: $default-transition;
+}
+
+
+.navbar-default .navbar-nav>li>a:hover {
+  color: $dark-green;
 }
