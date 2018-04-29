@@ -6,6 +6,7 @@ cache:
   - node_modules
 script:
 - npm run test
+- npm run build
 deploy:
   provider: s3
   access_key_id: AKIAJC5TGCZVOMLK3SDA
