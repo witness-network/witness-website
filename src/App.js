@@ -19,13 +19,6 @@ class App extends Component {
             </NavbarBrand>
             <Navbar.Toggle />
           </Navbar.Header>
-          <Navbar.Collapse>
-            <Nav pullRight>
-                <NavItem href="#" target="_blank">Whitepaper</NavItem>
-                <NavItem href="#" target="_blank">Team</NavItem>
-                <NavItem href="#" target="_blank">Advisors</NavItem>
-            </Nav>
-          </Navbar.Collapse>
         </Navbar>
         <Splash/>
       </div>
