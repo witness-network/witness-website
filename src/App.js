@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Nav, Navbar, NavbarBrand, NavItem } from 'react-bootstrap'
+import { Navbar, NavbarBrand } from 'react-bootstrap'
 import { Link } from 'react-scroll'
 import Splash from './Splash'
 
