@@ -1,8 +1,19 @@
 language: node_js
 node_js:
-  - "8"
+- '8'
 cache:
   directories:
-    - node_modules
+  - node_modules
 script:
-  - npm run test
+- npm run test
+deploy:
+  provider: s3
+  access_key_id: AKIAJC5TGCZVOMLK3SDA
+  secret_access_key:
+    secure: E93foHFK8I/uau7jJiNZeGfS9x5snzV32LbxRq7mqLN5TYrh6TNy4r4PidC/k29BETxb4xSrugxoGDcJVjkoDK9pFc8FCzYyFZWqrj4al1bBkkDzta71Qmkmf2TEyn3N5R89CTXKdqMfS+a3zcrMfv9fNwnz4WfPO1Ygy4QZXz1OffTteUH+9f49RNFNqAy/6Rq4+RCaLsZGMWqNNuIgO67r1tayT6jpt4kfQuSo5f+HorIynORYyT8/1QjCqIQFQr8LXyQHs13vvAOqisRXl9p1L47bLOAywU3Z43tyZR2/FbzpxyWq9Zs50M0bEju6nBkYcxhzgQi0m/ZuzSZw8d2g2XmRohZtlzy5fnJQzk14zU2LEkazoh7DH/21KscRfRMv6oKHn+H0zmKOpvAKTSSh4kZDyknghi7vyswLyi4pGTbpzwusyndzimAK47Ur6zDxA06Fe2gRyzmmAEPXZRNTEKcpdLjcjY2Vv6H9k4eVQo6oAEKRCEPX7Ik+phIc2Cx1mb26k+6ligLX6aMXsekLgSf1P1E1/OGYqrNQ8fPVZIoF6MxhSmnkVKOUcmLlxDo6/Lsl4PjsJhgAfVXGhn0PPBwV7RFJEv7AigK5rOhdxwebPzPGegufIRfBn1IAOv3gBn2ISQNLk4aKfy6QpaxGr9h+kvfb0GWprISCxxY=
+  bucket: witness.network
+  local-dir: build
+  acl: public_read
+  on:
+    repo: witness-network/witness-website
+    branch: production
