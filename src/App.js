@@ -17,7 +17,6 @@ class App extends Component {
                 <img src="./logo-light.png" className="logo" alt="logo" />
               </Link>
             </NavbarBrand>
-            <Navbar.Toggle />
           </Navbar.Header>
         </Navbar>
         <Splash/>

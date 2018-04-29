@@ -7,8 +7,9 @@ class Splash extends Component {
         <div className="splash" style={{"backgroundImage": "url(./background.png)"}}>
           <div className="content">
             <div>
-              <h1 className="headline">Decentralized Asset Verification</h1>
-              <h4>Witness is a new trust layer for investment decision making. Now financial asset metrics can be independently verified without intermediaries.</h4>
+              <h1 className="headline">Trustless Asset Verification</h1>
+
+              <h4>Witness is a new trust layer for investment decision making. Confidently verify asset ownership, value and portfolio returns — without revealing the sensitive details.</h4>
 
               <div className="email-form">
                 <h3>Stay informed</h3>
